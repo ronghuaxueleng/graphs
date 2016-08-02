@@ -51,7 +51,7 @@ var chartRender = window.chartRender || {};
         instances.prototype.getData = function (url, data) {
             var deferred = $.Deferred();
             $.ajax({
-                type: 'post',
+                type: 'get',
                 data: data,
                 dataType: 'json',
                 url: url,
