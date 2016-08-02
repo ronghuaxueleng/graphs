@@ -1,0 +1,146 @@
+{
+    "tooltip": {
+        "trigger": "axis"
+    },
+    "legend": {
+        "x": "left",
+        "y": "top",
+        "orient": "horizontal",
+        "data": [
+            "A类店",
+            "B类店"
+        ]
+    },
+    "toolbox": {
+        "show": true,
+        "feature": {
+            "mark": {
+                "show": true
+            },
+            "dataView": {
+                "show": true,
+                "readOnly": false
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar"
+                ]
+            },
+            "restore": {
+                "show": true
+            },
+            "saveAsImage": {
+                "show": true
+            }
+        }
+    },
+    "calculable": true,
+    "xAxis": [
+        {
+            "type": "category",
+            "data": [
+                "1次",
+                "2次",
+                "3次及以上"
+            ],
+            "axisLabel": {
+                "formatter": "{value}",
+                "rotate": 0
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "axisLabel": {
+                "formatter": "{value}"
+            }
+        }
+    ],
+    "series": [
+        {
+            "name": "A类店",
+            "type": "bar",
+            "data": [
+                71.96,
+                19.86,
+                8.18
+            ],
+            "itemStyle": {
+                "normal": {
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "formatter": "{b}\n{c}"
+                    }
+                }
+            },
+            "markPoint": {
+                "data": [
+                    {
+                        "type": "max",
+                        "name": "最大值"
+                    },
+                    {
+                        "type": "min",
+                        "name": "最小值"
+                    }
+                ]
+            },
+            "markLine": {
+                "data": [
+                    {
+                        "type": "average",
+                        "name": "平均值"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "B类店",
+            "type": "bar",
+            "data": [
+                86.79,
+                11.32,
+                1.89
+            ],
+            "itemStyle": {
+                "normal": {
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "formatter": "{b}\n{c}"
+                    }
+                }
+            },
+            "markPoint": {
+                "data": [
+                    {
+                        "type": "max",
+                        "name": "最大值"
+                    },
+                    {
+                        "type": "min",
+                        "name": "最小值"
+                    }
+                ]
+            },
+            "markLine": {
+                "data": [
+                    {
+                        "type": "average",
+                        "name": "平均值"
+                    }
+                ]
+            }
+        }
+    ],
+    "title": {
+        "text": "不同店铺类型客户购买次数分布",
+        "subtext": "2015年",
+        "x": "center",
+        "y": "top"
+    }
+}

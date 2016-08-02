@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绘制直方图</title>
+    <script src="lib/echarts.min.js"></script>
+    <script src="lib/jquery-2.1.0.js"></script>
+    <script src="base.js"></script>
+    <script src="biz.js"></script>
+    <script src="bar.js"></script>
+</head>
+<body style="width:80%; margin: auto">
+<div style="border-bottom: solid 1px">
+    <h2>绘制直方图</h2>
+    <div id="frequency" style="width: 100%; height: 400px;"></div>
+</div>
+<script>
+    var instances = chartRender['bar']['instances'](document.getElementById('frequency'));
+    instances.refresh('json/bar.json').then(function(){
+        
+    });
+</script>
+</body>
+</html>
