@@ -51,7 +51,7 @@ var chartRender = window.chartRender || {};
         instances.prototype.getData = function (url, data) {
             var deferred = $.Deferred();
             $.ajax({
-                type: 'get',
+                type: 'get',// 从post更改到get 避免405错误
                 data: data,
                 dataType: 'json',
                 url: url,
